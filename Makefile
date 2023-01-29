@@ -16,7 +16,7 @@ test:
 	cargo test --quiet
 
 run:
-	cargo run
+	cargo run -- apple test.txt
 
 release:
 	cargo build --release

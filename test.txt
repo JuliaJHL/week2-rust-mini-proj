@@ -1,0 +1,5 @@
+apple 1
+bee 2
+cat 3
+dog 4
+apple 5
