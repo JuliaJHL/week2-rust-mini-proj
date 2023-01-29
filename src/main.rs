@@ -27,7 +27,7 @@ fn main() -> Result<()> {
         .with_context(|| format!("could not read file `{}`", args.path.display()))?;
 
     // grrs::find_matches(&content, &args.pattern, &mut std::io::stdout());
-    grrs::find_matches(&content, &args.pattern);
+    grrs_hj::find_matches(&content, &args.pattern);
 
     Ok(())
 }
