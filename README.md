@@ -38,7 +38,7 @@ I made package info updates in `Cargo.toml` and pushlished it via:
 cargo login
 cargo publish
 ```
-Thus, you can apply the following command directly:
+Thus, you can apply the following commands directly:
 ```
 cargo install grrs_hj
 grrs_hj xxx(pattern) xxx(path)
@@ -58,6 +58,11 @@ When we apply `cargo run -- apple test.txt`, it would only return:
 ```
 apple 1
 apple 5
+```
+Or we can apply the following commands to get the same results:
+```
+cargo install grrs_hj
+grrs_hj apple test.txt
 ```
 
 
