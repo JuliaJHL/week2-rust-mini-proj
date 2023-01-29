@@ -1,5 +1,18 @@
 # A command line application in Rust
-This is a tool where we can give a string and a path, and it will print only the lines containing the given string. 
+* This is a tool where we can give a string and a path, and it will print only the lines containing the given string.
+* I distributed it with cargo in this [link](https://crates.io/crates/grrs_hj).
+* We are able to run the tool like this:
+```
+$ cat test.txt
+apple 1
+bee 2
+cat 3
+dog 4
+apple 5
+$ grrs_hj apple test.txt
+apple 1
+apple 5
+```
 
 ## project setup
 1. Clone the repo:
@@ -18,6 +31,19 @@ cargo build --release
 ```
 cargo run --xxx(pattern) xxx(path)
 ```
+
+## Distributing with cargo
+I made package info updates in `Cargo.toml` and pushlished it via:
+```
+cargo login
+cargo publish
+```
+Thus, you can apply the following command directly:
+```
+cargo install grrs_hj
+grrs_hj xxx(pattern) xxx(path)
+```
+
 
 ## examples:
 I created a test.txt with the following contents:
