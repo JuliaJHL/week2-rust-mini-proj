@@ -29,21 +29,8 @@ cargo build --release
 ```
 4. run the project:
 ```
-cargo run --xxx(pattern) xxx(path)
+cargo run -- xxx(pattern) xxx(path)
 ```
-
-## Distributing with cargo
-I made package info updates in `Cargo.toml` and pushlished it via:
-```
-cargo login
-cargo publish
-```
-Thus, you can apply the following commands directly:
-```
-cargo install grrs_hj
-grrs_hj xxx(pattern) xxx(path)
-```
-
 
 ## examples:
 I created a test.txt with the following contents:
@@ -59,11 +46,21 @@ When we apply `cargo run -- apple test.txt`, it would only return:
 apple 1
 apple 5
 ```
-Or we can apply the following commands to get the same results:
+![run_img](https://github.com/JuliaJHL/imgs_readme/blob/main/run.png)
+
+## Distributing with cargo
+I made package info updates in `Cargo.toml` and pushlished it via:
+```
+cargo login
+cargo publish
+```
+Therefore, you can install `grrs_hj`  and run it without cloning the repo by implementing the following commands directly:
 ```
 cargo install grrs_hj
-grrs_hj apple test.txt
+grrs_hj xxx(pattern) xxx(path)
 ```
+Here is an example:
+![grrs_hj](https://github.com/JuliaJHL/imgs_readme/blob/main/grrs_hj_new.png)
 
 
 ## References
